@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 1000;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 1000;
+  font-style: italic;
+}
+
+:root {
+  --dark-blue: #334253;
+  --grayish-blue: #67727E;
+  --very-light-gray: #F5F6FA;
+  --light-gray: #E9EBF0;
+  --white: #FFFFFF;
+  --moderate-blue: #5357B6;
+  --light-grayish-blue: #C5C6EF;
+  --soft-red: #ED6368;
+  --pale-red: #FFB8BB;
+
+  /* font-weight font-size/line-height font-family */
+  --f-heading-l: 450 1.5rem "Rubik";
+  --f-heading-m: 450 1rem "Rubik";
+  --f-body-bold: 450 1rem/1.5rem "Rubik";
+  --f-body: 300 1rem/1.5rem "Rubik";
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+button svg,
+button path {
+  pointer-events: none;
+}

@@ -1,0 +1,72 @@
+.dev-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #F2F2F2;
+}
+
+.container {
+  max-width: 730px;
+  width: 100%;
+}
+
+.comment-section {
+  padding-left: 8px;
+}
+
+/* delete dialog */
+#delete-dialog {
+  position: absolute;
+  z-index: 10;
+  width: 400px;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+#delete-dialog h3 {
+  font: var(--f-heading-l);
+  color: var(--dark-blue);
+  margin-bottom: 1.5rem;
+}
+
+#delete-dialog p {
+  font: var(--f-body);
+  color: var(--grayish-blue);
+  margin-bottom: 1.5rem;
+}
+
+.dialog-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dialog-btn button {
+  text-transform: uppercase;
+  font: var(--f-body-bold);
+  color: var(--white);
+  width: 161px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.dialog-btn-cancel {
+  background-color: var(--grayish-blue);
+}
+
+.dialog-btn-delete {
+  background-color: var(--soft-red);
+}
+
+.overlay {
+  position: absolute;
+  z-index: 5;
+  width: 100vh;
+  height: 100vh;
+  background-color: black;
+  opacity: 55%;
+}
